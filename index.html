@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preventivo · Diciottesimo — Ruggiero Dimiccoli</title>
+<meta name="description" content="Quattro soluzioni per il servizio fotografico del tuo diciottesimo compleanno, da € 90 a € 380. Consegna digitale e 10 stampe omaggio incluse — Ruggiero Dimiccoli Fotografia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%2315120E'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='7.5'%20fill='none'%20stroke='%23C6A35C'%20stroke-width='2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
@@ -12,9 +14,9 @@
 <meta property="og:url" content="https://rdimiccoli.github.io/preventivo-18esimo/">
 <meta property="og:title" content="Preventivo Fotografico · Diciottesimo Compleanno">
 <meta property="og:description" content="Quattro soluzioni per raccontare il tuo diciottesimo — Ruggiero Dimiccoli Fotografia">
-<meta property="og:image" content="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%28198%29.jpg">
+<meta property="og:image" content="https://rdimiccoli.github.io/preventivo-18esimo/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%28198%29.jpg">
+<meta name="twitter:image" content="https://rdimiccoli.github.io/preventivo-18esimo/og-cover.jpg">
 
 <style>
   :root{
@@ -69,9 +71,6 @@
   .muted{color:var(--ink-soft);}
   strong{font-weight:600;color:var(--taupe-deep);}
 
-  .rule{width:54px;height:1px;background:var(--taupe);border:0;margin:22px 0;}
-  .rule.center{margin-left:auto;margin-right:auto;}
-
   .diamond{
     display:flex;align-items:center;justify-content:center;
     gap:16px;color:var(--taupe);margin:26px 0;
@@ -109,6 +108,7 @@
   .cover{
     padding:0;text-align:center;
     position:relative;overflow:hidden;
+    min-height:100vh;
     min-height:100svh;
     display:flex;flex-direction:column;
     background:var(--paper);
@@ -118,7 +118,7 @@
   }
   .cover-img-wrap img{
     width:100%;height:100%;object-fit:cover;display:block;
-    filter:brightness(1.08) blur(0px);opacity:.78;
+    filter:brightness(1.04);opacity:.94;
   }
   .cover-img-wrap::after{
     content:"";position:absolute;inset:0;
@@ -139,7 +139,6 @@
     line-height:.98;font-weight:300;margin:0 0 18px;
   }
   .cover .prepared{font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);}
-  .cover .prepared .fill{border-bottom:1px solid var(--taupe);padding:0 26px;margin:0 4px;}
 
   /* ---------- COMPARISON ---------- */
   .compare{text-align:center;}
@@ -271,17 +270,6 @@
     letter-spacing:.14em;font-size:1.02rem;line-height:2;
   }
 
-  .sprig{position:absolute;width:120px;opacity:.14;color:var(--taupe);pointer-events:none;}
-  .sprig.tr{top:24px;right:22px;}
-  .sprig.bl{bottom:24px;left:22px;transform:scaleX(-1) rotate(8deg);}
-
-  .toolbar{position:fixed;right:18px;bottom:18px;z-index:50;}
-  .toolbar button{
-    font-family:var(--serif);font-size:1rem;letter-spacing:.04em;
-    background:var(--taupe);color:#15120E;border:0;border-radius:40px;
-    padding:14px 22px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.45);
-  }
-  .toolbar button:hover{background:var(--taupe-deep);}
 
   @media (min-width:560px){
     .cards{grid-template-columns:1fr 1fr;gap:14px;align-items:stretch;}
@@ -293,8 +281,7 @@
     @page{size:A4;margin:0;}
     body{background:#fff;}
     .doc{max-width:none;box-shadow:none;}
-    .toolbar{display:none;}
-    .page,.cover,.interlude,.thanks{page-break-after:always;break-after:page;}
+    .page,.cover,.interlude,.thanks,.cta-big-wrap{page-break-after:always;break-after:page;}
     .thanks{page-break-after:auto;}
     *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
   }
@@ -307,7 +294,7 @@
   <!-- 1 · COVER -->
   <section class="cover" style="border-top:0;">
     <div class="cover-img-wrap">
-      <img alt="Diciottesimo compleanno" loading="eager" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/liam-shaw-Z-WQq-K-Vts-unsplash.jpg">
+      <img alt="Diciottesimo compleanno" loading="eager" fetchpriority="high" decoding="async" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/liam-shaw-Z-WQq-K-Vts-unsplash.jpg">
     </div>
     <div class="cover-content">
       <div class="brand">
@@ -316,7 +303,7 @@
       </div>
       <p class="eyebrow">Preventivo · Servizio fotografico</p>
       <h1>Diciottesimo<br>Compleanno</h1>
-      <p class="prepared" style="margin-top:14px;">Valido <strong>30 giorni</strong> · 2026</p>
+      <p class="prepared" style="margin-top:14px;">Valido <strong>30 giorni</strong> dalla data di invio · 2026</p>
     </div>
   </section>
 
@@ -330,7 +317,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.08)  blur(0px); opacity: 0.78;" class="photo" alt="Reportage della festa" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%2833%29.jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Reportage della festa" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%2833%29.jpg">
     </figure>
     <div class="body">
       <p>Il servizio copre <strong>l'intera festa</strong> fino al momento in cui sarà ritenuto di aver raccolto tutto il materiale necessario a rappresentare in modo completo e coerente l'evento.</p>
@@ -348,7 +335,7 @@
 
   <!-- DIVIDER 1 -->
   <section class="interlude">
-    <img alt="Atmosfera del diciottesimo" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%28347%29.jpg">
+    <img loading="lazy" decoding="async" alt="Atmosfera del diciottesimo" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%28347%29.jpg">
     <div class="veil">
       <div class="q">«Diciotto anni di emozioni, in un giorno da non dimenticare.»</div>
       <div class="sig">Ruggiero Dimiccoli · Fotografia</div>
@@ -365,7 +352,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.08)  blur(0px); opacity: 0.78;" class="photo" alt="Shooting in location" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(46).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Shooting in location" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(46).jpg">
     </figure>
     <div class="body">
       <p>Comprende uno <strong>shooting fotografico dedicato</strong>, prima o dopo la festa, in una <strong>location scelta dal/dalla festeggiato/a</strong> o proposta da me.</p>
@@ -392,7 +379,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.08)  blur(0px); opacity: 0.78;" class="photo" alt="Momenti salienti della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%2881%29.jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Momenti salienti della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/%2881%29.jpg">
     </figure>
     <div class="body">
       <p>Il servizio comprende la mia presenza <strong>sin dall'inizio della festa</strong>, con una sessione di scatti dedicati al/alla festeggiato/a prima dell'arrivo degli invitati.</p>
@@ -410,7 +397,7 @@
 
   <!-- DIVIDER 2 -->
   <section class="interlude">
-    <img alt="Dettagli della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(180).jpg">
+    <img loading="lazy" decoding="async" alt="Dettagli della serata" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(180).jpg">
     <div class="veil">
       <div class="q">«La luce, gli sguardi, l'eleganza: i dettagli che restano.»</div>
       <div class="sig">Eighteen · Reportage</div>
@@ -427,7 +414,7 @@
       </div>
     </div>
     <figure>
-      <img style=" filter: brightness(1.08)  blur(0px); opacity: 0.78;" class="photo" alt="Momento torta" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(270).jpg">
+      <img class="photo" loading="lazy" decoding="async" alt="Momento torta" src="https://pub-822ee98e2b2545f886fdcc8a4083cde6.r2.dev/foto-18esimi/(270).jpg">
     </figure>
     <div class="body">
       <p>Il servizio prevede una <strong>sessione dedicata al/alla festeggiato/a</strong> prima dell'arrivo degli invitati, seguita dai soli scatti del <strong>momento torta</strong>.</p>
@@ -521,7 +508,8 @@
       <li><strong>Formato 15×22 cm</strong> — € 2,00 cad. (consegna differita) · € 3,00 cad. in sala <em style="font-size:.85rem;">(+€ 50 supplemento stampa istantanea)</em></li>
       <li><strong>Formato 10×15 cm</strong> — € 1,50 cad. (consegna differita) · € 2,00 cad. in sala <em style="font-size:.85rem;">(+€ 40 supplemento stampa istantanea)</em></li>
     </ul>
-  </div>
+      </div>
+    </div>
   </section>
 
   <!-- 6 · CONFRONTO -->
@@ -603,7 +591,8 @@
     <div class="diamond center"><span>◆</span></div>
     <div class="contact">
       <div class="name">Ruggiero Dimiccoli</div>
-      <a href="https://wa.me/393299392486">Scrivimi su WhatsApp</a>     
+      <a href="https://wa.me/393299392486?text=Ciao%20Ruggiero%2C%20ho%20letto%20il%20preventivo%20per%20il%20diciottesimo%20e%20vorrei%20qualche%20informazione." target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+      <div>+39 329 939 2486</div>
     </div>
   </section>
 
